@@ -1,7 +1,7 @@
 
 
 const fs = require('fs');
-const generatePage = require('./src/template.js')
+const generateReadMe = require('./src/template.js')
 
 const inquirer = require('inquirer');  // the package that allows us to use questionaire in the terminal
 
@@ -25,7 +25,7 @@ const readMeContent = () => {
             {
                 type: 'input',
                 name: 'description',
-                message: 'Enter a brief description of this project (Required)',
+                message: 'Enter a brief description of this app. (Required)',
                 validate: descriptionInput => {
                     if (descriptionInput) {
                       return true;
@@ -39,7 +39,7 @@ const readMeContent = () => {
               {
                 type: 'input',
                 name: 'installation',
-                message: 'Explain the installation instructions for this project ',
+                message: 'Explain the installation instructions for this app. (Required)',
                 validate: installationInput => {
                     if (installationInput) {
                       return true;
@@ -54,7 +54,7 @@ const readMeContent = () => {
             {
                 type: 'input',
                 name: 'contribution',
-                message: 'Describe the contribution guidelines.',
+                message: 'Describe the contribution guidelines if you wish for others to collaborate to project.',
                 validate: contributionInput => {
                     if (contributionInput) {
                       return true;
@@ -79,30 +79,12 @@ const readMeContent = () => {
                 }
             },
 
-            // {
-            //     type: 'confirm',
-            //     name: 'confirmAbout',
-            //     message: 'Would you like to enter some information about yourself for an "About" section?',
-            //     default: true
-            // },
-
-            {
-                type: 'input',
-                name: 'about',
-                message: 'Provide some information about yourself:',
-                when: ({ confirmAbout }) => {
-                  if (confirmAbout) {
-                    return true;
-                  } else {
-                    return false;
-                  }
-                }
-            },
+    
             {
                 type: 'checkbox',
                 name: 'licenses',
                 message: 'What licenses did you use? (Check all that apply)',
-                choices: ['JavaScript', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+                choices: ['License', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
               }
         ])
 }
@@ -111,9 +93,9 @@ readMeContent()
     .then(answers => {
         console.log(answers);
 
-        const pageHTML = generatePage(answers);
+        const indexContent = generateReadMe(answers);
 
-            fs.writeFile('./README.md', pageHTML, err => {
+            fs.writeFile('./README.md', indexContent, err => {
                 if (err) throw new Error(err);
         
                 console.log('Success!');
