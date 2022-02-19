@@ -9,6 +9,34 @@ const readMeContent = () => {
 
     return inquirer.prompt([
             {
+                type: 'input',
+                name: 'github',
+                message: 'What is your github username?',
+                validate: githubInput => {
+                    if (githubInput) {
+                    return true;
+                    } else {
+                    console.log('You need a github username!');
+                    return false;
+                    }
+                }
+            },
+
+            {
+                type: 'input',
+                name: 'email',
+                message: 'What is your email?',
+                validate: emailInput => {
+                    if (emailInput) {
+                    return true;
+                    } else {
+                    console.log('You need an email!');
+                    return false;
+                    }
+                }
+            },
+
+            {
                 type:'input',
                 name:'projectTitle',
                 message:'What is the title of your project? (Required, No Spaces)',
@@ -98,7 +126,13 @@ const readMeContent = () => {
                 name: 'licenses',
                 message: 'What licenses did you use? (Check all that apply)',
                 choices: ['License 1', 'License 2']
-              }
+            },
+
+            {
+                type: 'input',
+                name: 'questions',
+                message: 'This will be your "Questions" part, which already includes your GitHub page and E-mail as contact, what else would you like to add to this section?'
+            },
         ])
 }
 

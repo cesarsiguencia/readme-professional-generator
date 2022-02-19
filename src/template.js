@@ -33,5 +33,10 @@ ${templateData.contribution}
 ${templateData.licenses.join(', ')}
 
 ## Questions
+Email: [${templateData.email}](${templateData.email})
+Github: [${templateData.github}](https://github.com/${templateData.github})
+
+
+
     `;
 } 
