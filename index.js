@@ -11,7 +11,7 @@ const readMeContent = () => {
             {
                 type:'input',
                 name:'projectTitle',
-                message:'What is the title of your project? (Required)',
+                message:'What is the title of your project? (Required, No Spaces)',
                 validate: titleInput => {
                     if (titleInput) {
                       return true;
@@ -19,7 +19,7 @@ const readMeContent = () => {
                       console.log('Project title needed!');
                       return false;
                     }
-                  }
+                }
             },
 
             {
@@ -36,7 +36,7 @@ const readMeContent = () => {
                 }
             },
 
-              {
+            {
                 type: 'input',
                 name: 'installation',
                 message: 'Explain the installation instructions for this app. (Required)',
@@ -50,7 +50,35 @@ const readMeContent = () => {
                 }
             },
 
+            {
+                type: 'input',
+                name: 'usage',
+                message: 'Usage explanation (Required)',
+                validate: installationInput => {
+                    if (installationInput) {
+                      return true;
+                    } else {
+                      console.log('Enter instructions!');
+                      return false;
+                    }
+                }
+            },
 
+            {
+                type: 'input',
+                name: 'test',
+                message: 'How do you test the app?',
+                validate: testInput => {
+                    if (testInput) {
+                      return true;
+                    } else {
+                      console.log('Test needed!');
+                      return false;
+                    }
+                }
+            },
+
+        
             {
                 type: 'input',
                 name: 'contribution',
@@ -64,21 +92,6 @@ const readMeContent = () => {
                     }
                 }
             },
-
-            {
-                type: 'input',
-                name: 'test',
-                message: 'Write a test here.',
-                validate: testInput => {
-                    if (testInput) {
-                      return true;
-                    } else {
-                      console.log('Test needed!');
-                      return false;
-                    }
-                }
-            },
-
     
             {
                 type: 'checkbox',
@@ -95,7 +108,7 @@ readMeContent()
 
         const indexContent = generateReadMe(answers);
 
-            fs.writeFile('./' + (answers.projectTitle) + 'README.md', indexContent, err => {
+            fs.writeFile('./README.md', indexContent, err => {
                 if (err) throw new Error(err);
         
                 console.log('Success!');

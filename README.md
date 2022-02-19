@@ -1,13 +1,8 @@
-module.exports = templateData => {
-    // console.log(templateData);
 
-    
-
-    return `
-# ${templateData.projectTitle}
+# CesarSiguencia
 
 ## Description 
-${templateData.description}
+dasds
 
 ## Table of Contents
 - [How to Install](https://github.com/cesarsiguencia/readmefile-professional-generator##licenses-used)
@@ -19,19 +14,18 @@ ${templateData.description}
 
 
 ## Installation
-${templateData.installation}
+das
 
 ## Usage
-${templateData.usage}
+dsa
 
 ## Test Instructions
-${templateData.test}
+d
 
 
 ## Contribute to Project
-${templateData.contribution}
+sadsa
 
 ## Licenses Used
-${templateData.licenses.join(', ')}
-    `;
-} 
+License, HTML, CSS
+    
