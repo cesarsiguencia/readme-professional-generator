@@ -10,7 +10,7 @@ module.exports = templateData => {
 ${templateData.description}
 
 ## Table of Contents
-- [How to Install](https://github.com/cesarsiguencia/readmefile-professional-generator#licenses-used)
+- [How to Install](#usage)
 - Usage
 - Test Instructions
 - How to Contribute
