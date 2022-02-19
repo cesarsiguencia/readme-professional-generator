@@ -6,8 +6,22 @@ module.exports = templateData => {
     return `
 # ${templateData.projectTitle}
 
+## Table of Contents
+### Description of Projects
+### How to Install
+### How to Contribute
+### Test
+
+## Description 
 ### ${templateData.description}
 
-### Sample
+## Installation
+### ${templateData.installation}
+
+## Contribute to Project
+### ${templateData.contribution}
+
+## Licenses Used
+### ${templateData.licenses.join(', ')}
     `;
 } 
