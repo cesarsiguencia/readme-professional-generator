@@ -6,20 +6,22 @@ module.exports = templateData => {
     return `
 # ${templateData.projectTitle}
 
+## Description 
+${templateData.description}
+
 ## Table of Contents
-- Description of Projects
 - How to Install
 - How to Contribute
 - Test
 - Licenses
 
-## Description 
-${templateData.description}
 
 ## Installation
 ${templateData.installation}
 
-Contribute to Project
+## Usage
+
+##Contribute to Project
 ${templateData.contribution}
 
 ## Licenses Used

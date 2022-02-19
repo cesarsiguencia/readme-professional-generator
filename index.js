@@ -54,7 +54,7 @@ const readMeContent = () => {
             {
                 type: 'input',
                 name: 'contribution',
-                message: 'Describe the contribution guidelines if you wish for others to collaborate to project.',
+                message: 'How should other developers contact you if they wish to contribute to this project?.',
                 validate: contributionInput => {
                     if (contributionInput) {
                       return true;
@@ -95,7 +95,7 @@ readMeContent()
 
         const indexContent = generateReadMe(answers);
 
-            fs.writeFile('./README.md', indexContent, err => {
+            fs.writeFile('./' + (answers.projectTitle) + 'README.md', indexContent, err => {
                 if (err) throw new Error(err);
         
                 console.log('Success!');
