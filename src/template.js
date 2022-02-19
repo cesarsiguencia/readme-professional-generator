@@ -1,7 +1,12 @@
+module.exports = templateData => {
+    console.log(templateData);
 
-    # Cesar Siguencia 
+    
 
-    ### let's see if this actually works and I can generate
+    return `
+    # ${templateData.projectTitle} 
+
+    ### ${templateData.description}
 
 Choose numbers.
 
@@ -15,4 +20,5 @@ https://cesarsiguencia.github.io/your-personal-password-generator/
 
 ### Screenshot
 ![Screenshot 1](screenshot/password-generator-screenshot.jpeg)
-    
+    `;
+} 
