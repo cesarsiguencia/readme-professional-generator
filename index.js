@@ -108,7 +108,7 @@ readMeContent()
 
         const indexContent = generateReadMe(answers);
 
-            fs.writeFile('./' +(answers.projectTitle) +'README.md', indexContent, err => {
+            fs.writeFile('./README.md', indexContent, err => {
                 if (err) throw new Error(err);
         
                 console.log('Success!');
