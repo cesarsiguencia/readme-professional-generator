@@ -97,7 +97,7 @@ const readMeContent = () => {
                 type: 'checkbox',
                 name: 'licenses',
                 message: 'What licenses did you use? (Check all that apply)',
-                choices: ['License', 'HTML', 'CSS', 'ES6', 'jQuery', 'Bootstrap', 'Node']
+                choices: ['License 1', 'License 2']
               }
         ])
 }
@@ -108,7 +108,7 @@ readMeContent()
 
         const indexContent = generateReadMe(answers);
 
-            fs.writeFile('./README.md', indexContent, err => {
+            fs.writeFile('./' +(answers.projectTitle) +'README.md', indexContent, err => {
                 if (err) throw new Error(err);
         
                 console.log('Success!');
