@@ -8,6 +8,10 @@ Need a README? This project regenerates README files instantly from your compute
 [Link to Online Repository](https://github.com/cesarsiguencia/readmefile-professional-generator.git)
 
 
+### Tutorial Link
+[Link to Tutorial](https://drive.google.com/file/d/1dDOObMUn-SSuRPp826UlG1dgLZNsSkJW/view?usp=sharing)
+
+
 ### Screenshot
 ![Screenshot 1](./screenshots/screenshot-1.jpeg)
 
