@@ -1,13 +1,12 @@
 
 
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt) 
-            
-               
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)                            
+          
 
-# README GENERATOOR
+# SUNDAY MORNING
 
 ## Description 
-A simple README generator to use for multiple coding applications
+fsdfdsfds
 
 ## Table of Contents
 - [How to Install](#installation)
@@ -18,24 +17,26 @@ A simple README generator to use for multiple coding applications
 
 
 ## Installation
-Git clone my repository to your local folder. Make sure Node is installed on your computer.
+sd
 
 ## Usage
-Use it as many times as needed
+dsvsv
 
 ## Test Instructions
-Run the generator folder from the command line, initialize by typing 'Node index'
+ds
 
 ## Contribution
-Simply email me
+vds
 
 ## Questions
 
-##### Email: [cesar.siguencia@gmail.com](cesar.siguencia@gmail.com)
+##### Email: [cesar.siguencia](cesar.siguencia)
 ##### Github: [cesarsiguencia](https://github.com/cesarsiguencia)
 
 ## Licenses Used
-License used for this project Boost Software. Click on the badge above to be redirected.
+License used for this project MIT. Click on the badge above to be redirected. Information about license can be found [HERE](
+https://choosealicense.com/licenses/mit/                         
+          )
 
 
 

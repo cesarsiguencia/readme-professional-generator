@@ -5,91 +5,59 @@ const generateLicenses = licensesArr => {
 
 
         if (pickedLicenses === 'Apache'){
-        
             return `
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
-
-             
                `
         }
 
         if (pickedLicenses === 'Boost Software'){
-    
             return `
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt) 
-            
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)  
                `
         }
 
         if (pickedLicenses === 'MIT'){
-        
-
             return `
-[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)            
-                        
-          `
-            
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)                            
+          ` 
         }
 
         if (pickedLicenses === 'Mozilla Public'){
-        
-
             return `
-[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) 
-
-                         
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0)                
         `
-            
         }
-
-    
 };
 
-// const attachLicenses = newLicense => {
-//     console.log(newLicense)
+//=============================================
 
-//     var licenseName = newLicense.name
+const generateLink = licenses => {
+    const pickedLicenses = licenses
 
-//     var licenseLink = newLicense.link
+        if (pickedLicenses === 'Apache'){
+            return `
+https://choosealicense.com/licenses/apache-2.0/
+               `
+        }
 
-//     return `
-//     ${licenseName}
-//     ${licenseLink}
+        if (pickedLicenses === 'Boost Software'){
+            return `
+https://choosealicense.com/licenses/bsl-1.0/ 
+               `
+        }
 
- 
-//     `
-// }
-  
+        if (pickedLicenses === 'MIT'){
+            return `
+https://choosealicense.com/licenses/mit/                         
+          ` 
+        }
 
-    
-//     const pickedLicenses = licensesArr.filter(name => {
-
-//         if(name[0]){
-//             return `
-// Apache
-// https://choosealicense.com/licenses/apache-2.0/
-//             `
-//         }
-//         if (name[1]){ 
-//             return `
-// Boost Software
-// https://choosealicense.com/licenses/bsl-1.0/ 
-//             `
-//         }
-//     console.log(pickedLicenses)
-
-
-//     })
-
-   
-
-
-
-
-       
-
-   
-    
+        if (pickedLicenses === 'Mozilla Public'){
+            return `
+https://choosealicense.com/licenses/mpl-2.0/              
+        `
+        }
+};
 
 
 
@@ -133,7 +101,7 @@ ${templateData.questions}
 ##### Github: [${templateData.github}](https://github.com/${templateData.github})
 
 ## Licenses Used
-License used for this project ${licenses}. Click on the badge above to be redirected.
+License used for this project ${licenses}. Click on the badge above to be redirected. Information about license can be found [HERE](${generateLink(licenses)})
 
 
 
