@@ -7,8 +7,9 @@ const generateLicenses = licensesArr => {
         if (pickedLicenses === 'Apache'){
         
             return `
-License: Apache,
-link: https://choosealicense.com/licenses/apache-2.0/
+License: Apache
+[![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)  
+Link: https://choosealicense.com/licenses/apache-2.0/
              
                `
         }
@@ -16,8 +17,8 @@ link: https://choosealicense.com/licenses/apache-2.0/
         if (pickedLicenses === 'Boost Software'){
     
             return `
-License: Boost Software,
-link: https://choosealicense.com/licenses/bsl-1.0/   
+License: Boost Software
+Link: https://choosealicense.com/licenses/bsl-1.0/   
             
                `
         }
@@ -26,8 +27,8 @@ link: https://choosealicense.com/licenses/bsl-1.0/
         
 
             return `
-License: MIT,
-link: https://choosealicense.com/licenses/mit/             
+License: MIT
+Link: https://choosealicense.com/licenses/mit/             
                         
           `
             
@@ -37,8 +38,8 @@ link: https://choosealicense.com/licenses/mit/
         
 
             return `
-License: Mozilla Public,
-link: https://choosealicense.com/licenses/mit/
+License: Mozilla Public
+Link: https://choosealicense.com/licenses/mit/
                          
         `
             
@@ -48,8 +49,8 @@ link: https://choosealicense.com/licenses/mit/
             
             
             return `
-License: Unilicense,
-link: https://choosealicense.com/licenses/unlicense/
+License: Unilicense
+Link: https://choosealicense.com/licenses/unlicense/
                                      
         `
         }
