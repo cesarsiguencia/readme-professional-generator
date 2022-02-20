@@ -8,6 +8,7 @@ const generateLicenses = licensesArr => {
         
             return `
 License: Apache
+
 [![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)  
 Link: https://choosealicense.com/licenses/apache-2.0/
              
@@ -18,6 +19,8 @@ Link: https://choosealicense.com/licenses/apache-2.0/
     
             return `
 License: Boost Software
+
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)  
 Link: https://choosealicense.com/licenses/bsl-1.0/   
             
                `
