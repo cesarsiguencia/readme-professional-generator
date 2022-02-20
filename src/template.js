@@ -1,31 +1,102 @@
 const generateLicenses = licensesArr => {
-        
-    if(licensesArr[0]){
-        return `
-MIT License
- 
- Copyright (c) [year] [fullname]
- 
- Permission is hereby granted, free of charge, to any person obtaining a copy
- of this software and associated documentation files (the "Software"), to deal
- in the Software without restriction, including without limitation the rights
- to use, copy, modify, merge, publish, distribute, sublicense, and/or sell
- copies of the Software, and to permit persons to whom the Software is
- furnished to do so, subject to the following conditions:
- 
- The above copyright notice and this permission notice shall be included in all
- copies or substantial portions of the Software.
- 
- THE SOFTWARE IS PROVIDED "AS IS", WITHOUT WARRANTY OF ANY KIND, EXPRESS OR
- IMPLIED, INCLUDING BUT NOT LIMITED TO THE WARRANTIES OF MERCHANTABILITY,
- FITNESS FOR A PARTICULAR PURPOSE AND NONINFRINGEMENT. IN NO EVENT SHALL THE
- AUTHORS OR COPYRIGHT HOLDERS BE LIABLE FOR ANY CLAIM, DAMAGES OR OTHER
- LIABILITY, WHETHER IN AN ACTION OF CONTRACT, TORT OR OTHERWISE, ARISING FROM,
- OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS IN THE
- SOFTWARE.
-        `;
+    const pickedLicenses = licensesArr
+
+    console.log(pickedLicenses)
+
+    
+
+    for (var i=0; i < pickedLicenses.length; i++){
+
+        if (pickedLicenses[i] === 'Apache'){
+
+            var licenseOne = {
+                name: 'Apache',
+                link: 'https://choosealicense.com/licenses/apache-2.0/'
+            }
+
+            attachLicenses(licenseOne)
+        }
+
+        if (pickedLicenses[i] === 'Boost Software'){
+            var licenseTwo = {
+                name: 'Boost Software',
+                link: 'https://choosealicense.com/licenses/bsl-1.0/'
+            }
+            attachLicenses(licenseTwo)
+        }
+
+        if (pickedLicenses[i] === 'MIT'){
+           
+            var licenseThree = {
+                name: 'MIT',
+                link: 'https://choosealicense.com/licenses/mit/'
+            }
+            attachLicenses(licenseThree)
+            
+        }
+
+        if (pickedLicenses[i] === 'Mozilla Public'){
+           
+            var licenseFour = {
+                name: 'Mozilla Public',
+                link: 'https://choosealicense.com/licenses/mit/'
+            }
+            attachLicenses(licenseFour)
+            
+        }
+
+        if (pickedLicenses[i] === 'Unilicense'){
+           
+            var licenseFive = {
+                name: 'Mozilla Public',
+                link: 'https://choosealicense.com/licenses/mit/'
+            }
+            attachLicenses(licenseFive)
+            
+            
+        }
     }
+    
 };
+
+const attachLicenses = newLicense => {
+    console.log(newLicense)
+
+    var licenseName = newLicense.name
+
+    var licenseLink = newLicense.link
+
+    return `
+    ${licenseName}
+    ${licenseLink}
+
+ 
+    `
+}
+  
+
+    
+//     const pickedLicenses = licensesArr.filter(name => {
+
+//         if(name[0]){
+//             return `
+// Apache
+// https://choosealicense.com/licenses/apache-2.0/
+//             `
+//         }
+//         if (name[1]){ 
+//             return `
+// Boost Software
+// https://choosealicense.com/licenses/bsl-1.0/ 
+//             `
+//         }
+//     console.log(pickedLicenses)
+
+
+//     })
+
+   
+
 
 
 
@@ -68,15 +139,15 @@ ${templateData.test}
 ## Contribution
 ${templateData.contribution}
 
-## Licenses Used
-${generateLicenses(licenses)}
-
-
-
 ## Questions
 ${templateData.questions}
 #####Email: [${templateData.email}](${templateData.email})
 #####Github: [${templateData.github}](https://github.com/${templateData.github})
+
+## Licenses Used
+${generateLicenses(licenses)}
+${attachLicenses()}
+
 
     `;
 } 
