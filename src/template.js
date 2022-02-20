@@ -3,76 +3,74 @@ const generateLicenses = licensesArr => {
 
     console.log(pickedLicenses)
 
+
+        if (pickedLicenses === 'Apache'){
+        
+            return `
+License: Apache,
+link: https://choosealicense.com/licenses/apache-2.0/
+             
+               `
+        }
+
+        if (pickedLicenses === 'Boost Software'){
     
-
-    for (var i=0; i < pickedLicenses.length; i++){
-
-        if (pickedLicenses[i] === 'Apache'){
-
-            var licenseOne = {
-                name: 'Apache',
-                link: 'https://choosealicense.com/licenses/apache-2.0/'
-            }
-
-            attachLicenses(licenseOne)
+            return `
+License: Boost Software,
+link: https://choosealicense.com/licenses/bsl-1.0/   
+            
+               `
         }
 
-        if (pickedLicenses[i] === 'Boost Software'){
-            var licenseTwo = {
-                name: 'Boost Software',
-                link: 'https://choosealicense.com/licenses/bsl-1.0/'
-            }
-            attachLicenses(licenseTwo)
-        }
+        if (pickedLicenses === 'MIT'){
+        
 
-        if (pickedLicenses[i] === 'MIT'){
-           
-            var licenseThree = {
-                name: 'MIT',
-                link: 'https://choosealicense.com/licenses/mit/'
-            }
-            attachLicenses(licenseThree)
+            return `
+License: MIT,
+link: https://choosealicense.com/licenses/mit/             
+                        
+          `
             
         }
 
-        if (pickedLicenses[i] === 'Mozilla Public'){
-           
-            var licenseFour = {
-                name: 'Mozilla Public',
-                link: 'https://choosealicense.com/licenses/mit/'
-            }
-            attachLicenses(licenseFour)
+        if (pickedLicenses === 'Mozilla Public'){
+        
+
+            return `
+License: Mozilla Public,
+link: https://choosealicense.com/licenses/mit/
+                         
+        `
             
         }
 
-        if (pickedLicenses[i] === 'Unilicense'){
-           
-            var licenseFive = {
-                name: 'Mozilla Public',
-                link: 'https://choosealicense.com/licenses/mit/'
-            }
-            attachLicenses(licenseFive)
+        if (pickedLicenses === 'Unilicense'){
             
             
+            return `
+License: Unilicense,
+link: https://choosealicense.com/licenses/unlicense/
+                                     
+        `
         }
-    }
+
     
 };
 
-const attachLicenses = newLicense => {
-    console.log(newLicense)
+// const attachLicenses = newLicense => {
+//     console.log(newLicense)
 
-    var licenseName = newLicense.name
+//     var licenseName = newLicense.name
 
-    var licenseLink = newLicense.link
+//     var licenseLink = newLicense.link
 
-    return `
-    ${licenseName}
-    ${licenseLink}
+//     return `
+//     ${licenseName}
+//     ${licenseLink}
 
  
-    `
-}
+//     `
+// }
   
 
     
@@ -146,8 +144,10 @@ ${templateData.questions}
 
 ## Licenses Used
 ${generateLicenses(licenses)}
-${attachLicenses()}
+
 
 
     `;
 } 
+
+

@@ -122,7 +122,7 @@ const readMeContent = () => {
             },
     
             {
-                type: 'checkbox',
+                type: 'list',
                 name: 'licenses',
                 message: 'What licenses did you use? (Check all that apply)',
                 choices: ['Apache','Boost Software','MIT', 'Mozilla Public','Unilicense']
