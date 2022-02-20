@@ -125,13 +125,13 @@ const readMeContent = () => {
                 type: 'checkbox',
                 name: 'licenses',
                 message: 'What licenses did you use? (Check all that apply)',
-                choices: ['License 1', 'License 2']
+                choices: ['Apache','Boost Software','MIT', 'Mozilla Public','Unilicense']
             },
 
             {
                 type: 'input',
                 name: 'questions',
-                message: 'This will be your "Questions" part, which already includes your GitHub page and E-mail as contact, what else would you like to add to this section?'
+                message: 'This will be your "Questions" part, which already includes your GitHub page and E-mail as contact, what else would you like to add to this section if a developer wishes to reach you with questions?'
             },
         ])
 }
