@@ -86,19 +86,24 @@ ${templateData.description}
 ## Installation
 ${templateData.installation}
 
+
 ## Usage
 ${templateData.usage}
+
 
 ## Test Instructions
 ${templateData.test}
 
+
 ## Contribution
 ${templateData.contribution}
+
 
 ## Questions
 ${templateData.questions}
 ##### Email: [${templateData.email}](${templateData.email})
 ##### Github: [${templateData.github}](https://github.com/${templateData.github})
+
 
 ## Licenses Used
 License used for this project ${licenses}. Click on the badge above to be redirected. Information about license can be found [HERE](${generateLink(licenses)})

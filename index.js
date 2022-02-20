@@ -3,7 +3,7 @@
 const fs = require('fs');
 const generateReadMe = require('./src/template.js')
 
-const inquirer = require('inquirer');  // the package that allows us to use questionaire in the terminal
+const inquirer = require('inquirer'); 
 
 const readMeContent = () => {
 
