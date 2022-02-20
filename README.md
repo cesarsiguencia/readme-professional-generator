@@ -1,8 +1,13 @@
 
-# dsad
+
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt) 
+            
+               
+
+# README GENERATOOR
 
 ## Description 
-sa
+A simple README generator to use for multiple coding applications
 
 ## Table of Contents
 - [How to Install](#installation)
@@ -13,30 +18,24 @@ sa
 
 
 ## Installation
-dsa
+Git clone my repository to your local folder. Make sure Node is installed on your computer.
 
 ## Usage
-das
+Use it as many times as needed
 
 ## Test Instructions
-das
+Run the generator folder from the command line, initialize by typing 'Node index'
 
 ## Contribution
-sad
+Simply email me
 
 ## Questions
-asdasdsa
-#####Email: [dasdsa](dasdsa)
-#####Github: [YAYYY](https://github.com/YAYYY)
+
+#####Email: [cesar.siguencia@gmail.com](cesar.siguencia@gmail.com)
+#####Github: [cesarsiguencia](https://github.com/cesarsiguencia)
 
 ## Licenses Used
-
-License: Boost Software
-
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)  
-Link: https://choosealicense.com/licenses/bsl-1.0/   
-            
-               
+License used for this project Boost Software. Click on the badge above to be redirected.
 
 
 

@@ -7,10 +7,8 @@ const generateLicenses = licensesArr => {
         if (pickedLicenses === 'Apache'){
         
             return `
-License: Apache
+[![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)
 
-[![License](https://img.shields.io/badge/License-Apache_2.0-yellowgreen.svg)](https://opensource.org/licenses/Apache-2.0)  
-Link: https://choosealicense.com/licenses/apache-2.0/
              
                `
         }
@@ -18,10 +16,7 @@ Link: https://choosealicense.com/licenses/apache-2.0/
         if (pickedLicenses === 'Boost Software'){
     
             return `
-License: Boost Software
-
-[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt)  
-Link: https://choosealicense.com/licenses/bsl-1.0/   
+[![License](https://img.shields.io/badge/License-Boost_1.0-lightblue.svg)](https://www.boost.org/LICENSE_1_0.txt) 
             
                `
         }
@@ -30,8 +25,7 @@ Link: https://choosealicense.com/licenses/bsl-1.0/
         
 
             return `
-License: MIT
-Link: https://choosealicense.com/licenses/mit/             
+[![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)            
                         
           `
             
@@ -41,21 +35,11 @@ Link: https://choosealicense.com/licenses/mit/
         
 
             return `
-License: Mozilla Public
-Link: https://choosealicense.com/licenses/mit/
+[![License: MPL 2.0](https://img.shields.io/badge/License-MPL_2.0-brightgreen.svg)](https://opensource.org/licenses/MPL-2.0) 
+
                          
         `
             
-        }
-
-        if (pickedLicenses === 'Unilicense'){
-            
-            
-            return `
-License: Unilicense
-Link: https://choosealicense.com/licenses/unlicense/
-                                     
-        `
         }
 
     
@@ -116,6 +100,8 @@ const licenses = templateData.licenses
 
 
     return `
+${generateLicenses(licenses)}
+
 # ${templateData.projectTitle}
 
 ## Description 
@@ -147,7 +133,7 @@ ${templateData.questions}
 #####Github: [${templateData.github}](https://github.com/${templateData.github})
 
 ## Licenses Used
-${generateLicenses(licenses)}
+License used for this project ${licenses}. Click on the badge above to be redirected.
 
 
 
