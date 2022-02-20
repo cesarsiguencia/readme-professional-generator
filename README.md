@@ -31,8 +31,8 @@ Simply email me
 
 ## Questions
 
-#####Email: [cesar.siguencia@gmail.com](cesar.siguencia@gmail.com)
-#####Github: [cesarsiguencia](https://github.com/cesarsiguencia)
+##### Email: [cesar.siguencia@gmail.com](cesar.siguencia@gmail.com)
+##### Github: [cesarsiguencia](https://github.com/cesarsiguencia)
 
 ## Licenses Used
 License used for this project Boost Software. Click on the badge above to be redirected.

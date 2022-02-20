@@ -129,8 +129,8 @@ ${templateData.contribution}
 
 ## Questions
 ${templateData.questions}
-#####Email: [${templateData.email}](${templateData.email})
-#####Github: [${templateData.github}](https://github.com/${templateData.github})
+##### Email: [${templateData.email}](${templateData.email})
+##### Github: [${templateData.github}](https://github.com/${templateData.github})
 
 ## Licenses Used
 License used for this project ${licenses}. Click on the badge above to be redirected.
