@@ -3,10 +3,10 @@
 [![License: MIT](https://img.shields.io/badge/License-MIT-yellow.svg)](https://opensource.org/licenses/MIT)                            
           
 
-# SUNDAY MORNING
+# README generator 
 
 ## Description 
-fsdfdsfds
+A simple generator that creates README files from the terminal. README files are created for multiple projects needed.
 
 ## Table of Contents
 - [How to Install](#installation)
@@ -17,21 +17,26 @@ fsdfdsfds
 
 
 ## Installation
-sd
+Clone this repository to your local drive. Make sure NODE is installed through the terminal on your machine.
+
 
 ## Usage
-dsvsv
+Use as many times as needed.
+
 
 ## Test Instructions
-ds
+Initiate from the command line 'Node Index' and answer a series of questions regarding your project. The file will generate after you answer the questions.
+
 
 ## Contribution
-vds
+Just email me
+
 
 ## Questions
 
-##### Email: [cesar.siguencia](cesar.siguencia)
+##### Email: [cesar.siguencia@gmail.como](cesar.siguencia@gmail.como)
 ##### Github: [cesarsiguencia](https://github.com/cesarsiguencia)
+
 
 ## Licenses Used
 License used for this project MIT. Click on the badge above to be redirected. Information about license can be found [HERE](
