@@ -1,5 +1,3 @@
-
-
 const fs = require('fs');
 const generateReadMe = require('./src/template.js')
 
